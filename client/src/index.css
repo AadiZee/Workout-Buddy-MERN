@@ -129,6 +129,14 @@ form button {
 form button:hover {
   background: #fff;
   color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+form button:disabled {
+  background: gray;
+  color: black;
+  border: 1px solid black;
+  cursor: not-allowed;
 }
 
 div.error {
@@ -142,4 +150,59 @@ div.error {
 
 input.error {
   border: 1px solid var(--error);
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  border: none;
+  margin-left: 10px;
+  background: var(--primary);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+nav button {
+  background: white;
+  color: var(--error);
+  border: 1px solid var(--error);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: poppins;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+nav button:hover {
+  background: var(--error);
+  color: white;
+  border: 1px solid white;
+}
+
+nav span {
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+/* auth */
+form.register,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
 }
